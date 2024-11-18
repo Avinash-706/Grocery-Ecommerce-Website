@@ -1,36 +1,44 @@
-import React, { useContext } from 'react'
-import {assets} from '../assets/assets'
-import {Link,NavLink} from 'react-router-dom'
-import { ShopContext } from '../context/ShopContext'
+import React, { useContext } from 'react';
+import { assets } from '../assets/assets';
+import { Link, NavLink } from 'react-router-dom';
+import { ShopContext } from '../context/ShopContext';
+
 const NavBar = () => {
-  const {showSearch,setShowSearch,getCartCount} = useContext(ShopContext)
+  const { showSearch, setShowSearch, getCartCount } = useContext(ShopContext);
+
+  // Logout function
+  const handleLogout = () => {
+    localStorage.removeItem('loggedInUser'); // Remove the logged-in user's data
+    window.location.reload(); // Refresh the page to instantly update the UI
+  };
+
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
       <Link to='/'>
-        <img src={assets.logo} className='w-36' alt='Yes'/>
+        <img src={assets.logo} className='w-36' alt='Yes' />
       </Link>
       <ul className='flex gap-5'>
         <NavLink to='/' className='flex flex-col items-center gap-1'>
-            <p>HOME</p>
-            <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
+          <p>HOME</p>
+          <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
         </NavLink>
         <NavLink to='/collection' className='flex flex-col items-center gap-1'>
-            <p>PRODUCTS</p>
-            <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
+          <p>PRODUCTS</p>
+          <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
         </NavLink>
         <NavLink to='/about' className='flex flex-col items-center gap-1'>
-            <p>ABOUT</p>
-            <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
+          <p>ABOUT</p>
+          <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
         </NavLink>
         <NavLink to='/contact' className='flex flex-col items-center gap-1'>
-            <p>CONTACT</p>
-            <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
+          <p>CONTACT</p>
+          <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
         </NavLink>
       </ul>
 
       <div className='flex items-center gap-6'>
         <Link to='/collection'>
-          <img onClick={()=>setShowSearch(true)} src={assets.search_icon} className="w-5 cursor-pointer" alt="" />
+          <img onClick={() => setShowSearch(true)} src={assets.search_icon} className="w-5 cursor-pointer" alt="" />
         </Link>
         <div className='group relative'>
           <Link to='/login'>
@@ -39,8 +47,13 @@ const NavBar = () => {
           <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
             <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
               <p className='cursor-pointer hover:text-black'>My Profile</p>
-              <p className='cursor-pointer hover:text-black'>Orderes</p>
-              <p className='cursor-pointer hover:text-black'>Logout</p>
+              <p className='cursor-pointer hover:text-black'>Orders</p>
+              <p
+                className='cursor-pointer hover:text-black'
+                onClick={handleLogout} // Attach logout function here
+              >
+                Logout
+              </p>
             </div>
           </div>
         </div>
@@ -50,7 +63,7 @@ const NavBar = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
