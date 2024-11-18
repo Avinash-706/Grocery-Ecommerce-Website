@@ -5,7 +5,7 @@ export const ShopContext = createContext();
 
 const ShopContextProvider = (props)=>{
     const currency = 'Rs.';
-    const delivery_fee = 10;
+    const delivery_fee = 0;
     const [search,setSearch] = useState('');
     const [showSearch,setShowSearch] = useState(false);
     const [cartItems,setCartItems] = useState({});
@@ -43,6 +43,9 @@ const ShopContextProvider = (props)=>{
         cartData[itemId][size] = quantity;
         setCartItems(cartData)
     }
+    const onlyCOD = async ()=>{
+        toast.error('Only Cash On Delivery is avaible now');
+    }
     const getCartAmount = ()=>{
         let totalAmount = 0;
         for(const item in cartItems){
@@ -64,7 +67,7 @@ const ShopContextProvider = (props)=>{
         products,currency,delivery_fee,
         search,setSearch,showSearch,setShowSearch,
         cartItems,addToCart,getCartCount,updateQuantity,
-        getCartAmount
+        getCartAmount, onlyCOD
     }
     return (
         <ShopContext.Provider value={value}>

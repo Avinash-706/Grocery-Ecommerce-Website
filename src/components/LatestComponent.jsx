@@ -7,7 +7,7 @@ const LatestComponent = () => {
     const {products} = useContext(ShopContext);
     const [latestProducts,setLatestProduct] = useState([]);
     useEffect(()=>{
-      setLatestProduct(products.slice(0,12));
+      setLatestProduct(products.slice(0,15));
     },[])
     // console.log(products)
   return (
@@ -18,7 +18,7 @@ const LatestComponent = () => {
         Don’t miss out on our limited-time offers! Enjoy great savings on top products, from fresh produce to pantry essentials. These deals won’t last long, so stock up while you can!
         </p>
       </div>
-      <div className='grid grid-cols-4 gap-4'>
+      <div className='grid grid-cols-5 gap-4'>
         {
           latestProducts.map((item)=>(
             <ProductItem key={item._id} item={item}/>
