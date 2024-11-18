@@ -9,12 +9,12 @@ const About = () => {
         <Title text1={'ABOUT'} text2={'US'}/>
       </div>
       <div className='my-10 flex flex-row gap-16'>
-        <img className='max-w-[450px]' src={assets.about_img} alt="" />
+        <img className='max-w-[450px]' src={assets.logo} alt="" />
         <div className='flex flex-col justify-center gap-6 w-2/4 text-gray-600'>
-          <p>Fancy Garments was born out of a passion for innovation and a desire to revolutionize the way people shop online. Our journey began with a simple idea: to provide a platform where customers can easily discover, explore, and purchase a wide range of products from the comfort of their homes.</p>
-          <p>Since our inception, we've worked tirelessly to curate a diverse selection of high-quality products that cater to every taste and preference. From fashion and beauty to electronics and home essentials, we offer an extensive collection sourced from trusted brands and suppliers.</p>
+          <p>If you are looking for farm fresh fruits and vegetables, world-class breads, top-quality pulses and food grains, dairy products, then, SHREE BHANDAR has got you covered.</p>
+          <p>No more getting stuck in traffic jams, paying for parking, standing in long queues and carrying heavy bags- get everything you need, when you need, right at your doorstep. Right from fresh fruits and vegetables, rice and dals, spices and seasonings to packaged products-we have it all.</p>
           <b className='text-gray-600'>Our Mission</b>
-          <p>Our mission at Fancy Garments is to empower customers with choice, convenience, and confidence. We're dedicated to providing a seamless shopping experience that exceeds expectations, from browsing and ordering to delivery and beyond.</p>
+          <p>Our mission at Shree Bhandar is to allow user to choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at lowest prices. Select a time slot for delivery and your order will be delivered right to your doorstep anywhere in two pincodes 713364, 713386 over West Bengal.</p>
         </div>
       </div>
       <div className='text-4xl py-4'>

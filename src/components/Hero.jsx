@@ -7,16 +7,16 @@ const Hero = () => {
         <div className='text-[#414141]'>
             <div className='flex items-center gap-2'>
                 <p className='w-8 h-[2px] bg-[#414141]'></p>
-                <p className='font-medium text-sm'>OUR BESTSELLERS</p>
+                <p className='font-medium text-sm'>Order Your DAILY GROCERY</p>
             </div>
-            <h1 className='text-3xl leading-relaxed'>Latest Arrivals</h1>
+            <h1 className='text-3xl leading-relaxed'>#Free Delivery</h1>
             <div className='flex items-center gap-2'>
                 <p className='font-semibold text-sm'>SHOP NOW</p>
                 <p className='w-8 h-[1px] bg-[#414141]'></p>
             </div>
         </div>
       </div>
-      <img className="w-2/5" src={assets.hero_img} alt="Hero" />
+      <img className="w-2/5"  src={assets.hero_img} alt="Hero" />
     </div>
   )
 }

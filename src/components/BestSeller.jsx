@@ -15,8 +15,8 @@ const BestSeller = () => {
       <div className='text-center text-3xl py-8'>
         <Title text1={'BEST'} text2={'SELLER'} />
         <p className='w-3/4 m-auto text-xs text-gray-600'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae saepe laudantium cupiditate ex beatae? Commodi ut quo totam dolore eligendi esse neque quasi, id nostrum, aliquid doloremque cumque delectus molestiae asperiores.
-        </p>
+        Discover our top-rated products that customers love and keep coming back for. From fresh produce to pantry staples, these items are favorites in kitchens everywhere for their quality and value. Whether you're stocking up for the week or looking for something special, these bestsellers are tried, tested, and trusted by our loyal shoppers.
+</p>
         <div className='grid grid-cols-5 gap-4 pt-7'>
             {
                 bestSeller.map((item)=>(

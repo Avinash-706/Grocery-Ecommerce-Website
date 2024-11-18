@@ -12,9 +12,9 @@ const Contact = () => {
         <img className='max-w-[480px]' src={assets.contact_img} alt="" />
         <div className='flex flex-col justify-center items-start gap-6'>
           <p className='font-semibold text-xl text-gray-600'>Our Store</p>
-          <p className='text-gray-500'>Dabbi Bazaar<br/>Samrala,Punjab,141114</p>
-          <p className='text-gray-500'>Tel: +919877902293 <br/>Email: manan@gmail.com</p>
-          <p className='font-semibold text-xl text-gray-600'>Careers at Fancy Garments</p>
+          <p className='text-gray-500'>Rupnarayanpur Bazaar<br/>Bhardhaman,West Bengal,713364</p>
+          <p className='text-gray-500'>Tel: +91 7063628574<br/>Email: shreebhandar85@gmail.com</p>
+          <p className='font-semibold text-xl text-gray-600'>Careers at Shree Bhandar</p>
           <p className='text-gray-500'>Learn more about our teams and job opening.</p>
           <button className='border border-black px-8 py-4 text-sm hover:text-white hover:bg-black transition-all duration-500'>Explore Jobs</button>
         </div>

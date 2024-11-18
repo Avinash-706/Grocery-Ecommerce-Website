@@ -13,9 +13,9 @@ const LatestComponent = () => {
   return (
     <div className='my-10'>
       <div className='text-center py-8 text-3xl'>
-        <Title text1={'LATEST'} text2={'COLLECTION'}/>
+        <Title text1={'SPECIAL'} text2={'DEALS'}/>
         <p className='w-3/4 m-auto text-xs text-gray-600'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam suscipit ullam blanditiis corporis veniam aliquid ea autem assumenda pariatur animi magnam eaque molestiae aspernatur non, voluptatem numquam fugiat exercitationem alias perferendis, impedit modi unde!
+        Don’t miss out on our limited-time offers! Enjoy great savings on top products, from fresh produce to pantry essentials. These deals won’t last long, so stock up while you can!
         </p>
       </div>
       <div className='grid grid-cols-4 gap-4'>

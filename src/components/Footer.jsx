@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
             <img src={assets.logo} className='mb-5 w-32' alt="" />
             <p className='w-2/3 text-gray-600'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum dolores modi labore odit rem! Id alias deserunt earum sequi labore numquam, officiis iure, facere asperiores ut quod quis ipsa veritatis libero quaerat.
+            Fresh produce, top-quality groceries, and everyday essentials delivered to your doorstep. Shop with us for the best prices and the utmost conveniece, anywhere in India.
             </p>
         </div>
         <div>
@@ -23,8 +23,8 @@ const Footer = () => {
         <div>
             <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
             <ul className='flex flex-col gap-1 text-slate-600'>
-                <li>+91 9877902283</li>
-                <li>manan@gmail.com</li>
+                <li>+91 7063628574</li>
+                <li>shreebhandar85@gmail.com</li>
                 <li>Instagram</li>
             </ul>
         </div>
